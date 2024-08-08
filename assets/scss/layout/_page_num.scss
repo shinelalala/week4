@@ -1,0 +1,24 @@
+.page-num-list {
+    margin-top: 92px;
+    margin-bottom: 92px;
+    color: #555555;
+}
+
+.page-num-list li {
+    border: 1px solid #555555;
+}
+.page-num-list .current {
+    background: #000;
+    color: #ffffff;
+}
+.page-num-list a {
+    display: block;
+    padding: 12px 13px;
+}
+
+@media (max-width:767px) {
+    .page-num-list {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}

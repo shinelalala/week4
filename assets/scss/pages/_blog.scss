@@ -1,0 +1,146 @@
+.blog-nav {
+    background: #650300;
+    color: #ffffff;
+    margin-bottom: 96px;
+}
+.blog-menu li {
+    margin-right: 48px;
+}
+.blog-menu li a {
+    display: block;
+    padding: 12px;
+}
+
+@media (max-width:992px) {
+    .blog-nav {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:767px) {
+    .blog-nav {
+        display: none;
+    }
+}
+
+
+.blog-h2 {
+    font-size: 48px;
+    font-weight: bold;
+    border-left:  8px solid #9F1213;
+    margin-bottom: 32px;
+}
+@media (max-width:992px) {
+    .blog-h2 {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:767px) {
+    .blog-h2 {
+        margin-top: 40px;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+/* 容器與內容分離 */
+.blog-div .card-row {
+    margin-right: -12px;
+    margin-left: -12px;
+    flex-wrap: wrap;
+}
+
+.blog-div .column {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 60px;
+}
+.blog-div .card {
+    display: flex;
+    align-items: start;
+    height: 100%;
+}
+
+.blog-img {
+    width: 50%;
+    margin-right: 24px;
+}
+
+.blog-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-title {
+    font-size: 32px;
+    color: #650300;
+}
+.blog-brief {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.blog-tag {
+    font-size: 20px;
+}
+.blog-time {
+    font-size: 16px;
+}
+.blog-desc {
+    font-size: 20px;
+    color: #555555;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+.bolg-more {
+    display: inline-block;
+    color: #650300;
+    font-size: 36px;
+    font-weight: 900;
+    display: block;
+    margin-top: auto;
+    text-align: right;
+}
+
+@media (max-width:992px) {
+    .blog-div .column {
+        margin-bottom: 24px;
+    }
+    .blog-title {
+        font-size: 24px;
+    }
+    .blog-brief {
+        margin-bottom: 4px;
+    }
+    .blog-tag {
+        font-size: 16px;
+    }
+    .blog-desc {
+        font-size: 16px;
+        -webkit-line-clamp: 6;
+    }
+    .bolg-more {
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .blog-div .card {
+        flex-wrap: wrap;
+    }
+    .blog-img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .blog-content {
+        width: 100%;
+    }
+    .blog-desc {
+        display: none;
+    }
+}
